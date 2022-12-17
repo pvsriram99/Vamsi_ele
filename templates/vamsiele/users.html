@@ -1,0 +1,26 @@
+{%extends 'vamsiele/base.html'%}
+{%block body_block%}
+{%load static%}
+<link rel="stylesheet" href="{%static 'css/styles.css'%}">
+<center>
+    <h2>Registered Users</h2>
+<table border="2px";>
+    <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Message</th>
+    </thead>
+    {%for i in keys%}
+
+    <tr>
+        <td>{{i.Name}}</td>
+        <td>{{i.Email}}</td>
+        <td>{{i.Mobile}}</td>
+        <td>{{i.Message}}</td>
+
+    </tr>
+    {%endfor%}
+</table>
+    </center>
+{%endblock%}

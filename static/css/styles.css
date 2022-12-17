@@ -1,0 +1,12 @@
+img {
+  width: auto%;
+  height: 60%;
+
+}
+
+
+body{
+    background: hsla(50, 33%, 25%, .75);
+    text-align: center;
+    color: white;
+}
